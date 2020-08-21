@@ -4,14 +4,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-
 @Controller
-public class MainController {
+public class BlogController {
 
-    @GetMapping("/")
-    public String home (Model model) {
+    @GetMapping("/blog")
+    public String blogMain (Model model) {
         model.addAttribute("title", "Главная страница");
-        //model.addAttribute(about(model.getAttribute("123"));
-        return "home";
+        return "blogMain";
     }
+
 }

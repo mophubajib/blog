@@ -12,4 +12,9 @@ public class AboutController {
       //  model.addAttribute("test", "123");
         return "aboutMain";
     }
+    @GetMapping("about/test")
+    public String aboutTest(Model model) {
+        //  model.addAttribute("test", "123");
+        return "about/aboutTest";
+    }
 }
